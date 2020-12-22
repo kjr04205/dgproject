@@ -1,0 +1,111 @@
+.intro--banner2{
+    -webkit-animation:floatHorizontal 1s ease-in-out infinite;
+    animation:floatHorizontal 2s ease-in-out infinite;
+}
+.intro__menu--box01 > ul > li > a:hover, .intro__menu--box02 > ul > li > a:hover, .intro__menu--box03 > ul > li > a:hover
+{-webkit-animation:floatHorizontal 1s ease-in-out infinite;
+    animation:floatHorizontal 1s ease-in-out infinite; font-weight: bold;}
+    
+@keyframes floatHorizontal {
+    0%, 100% {
+        transform:translateX(0);
+    }
+    50% {
+        transform:translateX(10px);
+    }
+}
+.intro--h{
+    -webkit-animation:floatHorizontal 1s ease-in-out infinite;
+    animation:heart 2s ease-in-out infinite;
+}
+@keyframes heart{
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+}
+.intro--logo, .intro--t, .intro--t2, .intro__go{
+    animation-name: time2;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-direction: reverse;   
+}
+
+@keyframes time2{
+    0%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+}
+.intro--p{
+    animation-name: time;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-direction: reverse;   
+}
+@keyframes time{
+    0%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+}
+.intro__menu--box01{
+    animation-name: time1;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-direction: reverse;
+}
+
+.intro__menu--box02{
+    animation-name: time1;
+    animation-duration: 1.4s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-direction: reverse;
+}
+.intro__menu--box03{
+    animation-name: time1;
+    animation-duration: 1.6s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-direction: reverse;
+}
+@keyframes time1{
+    from{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to{
+        transform: translateY(7px);
+        opacity: 0;
+    }
+}
+.intro__ft{
+    animation-name: time3;
+    animation-duration: 1.6s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-direction: reverse;
+}
+@keyframes time3{
+    from{
+        transform: translateY(0);
+        opacity: 1;
+    }to{
+        transform: translateY(-2px);
+        opacity: 0;
+    }
+}
